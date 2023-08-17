@@ -8,6 +8,7 @@ import Features from '../components/features.astro'
 import FindOutMore from '../components/findoutmore.astro'
 import LatestArticles from '../components/latestarticles.astro'
 import CTA from '../components/cta.astro'
+import Event from './event.astro'
 
 const frontmatter: Frontmatter = {
   title: SiteMetadata.title,
@@ -21,11 +22,5 @@ const posts = await getCollection('blog')
 const latestPosts = posts.sort((a, b) => +b.data.publishDate - +a.data.publishDate).filter(p => !p.data.draft)
 ---
 
-<Base frontmatter={frontmatter}>
-  <Hero />
-  <Features />
-  <FindOutMore />
-  <LatestArticles posts={latestPosts} />
-  <CTA />
-  <div class="p-24 md:p-12 bg-white dark:bg-black"></div>
-</Base>
+<Event />
+
