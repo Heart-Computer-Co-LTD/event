@@ -77,10 +77,7 @@ export const DefaultSVG = '../images/svg/undraw/undraw_my_feed.svg'
 export const DefaultImage = '../images/undraw/undraw_my_feed.png'
 
 export const NavigationLinks = [
-  { name: 'はじめに', href: '' },
-  { name: '業務情報', href: 'blog' },
-  { name: '価格', href: 'price' },
-  { name: '製品サポート', href: 'doc/page-0' },
+  { name: 'イベント申し込み', href: 'event' },
 ]
 
 export const CategoryDetail = [
@@ -144,16 +141,4 @@ export const COMMUNITY_INVITE_URL = `https://astro.build/chat`
 
 export type Sidebar = Record<string, { text: string; link: string }[]>
 
-export const SIDEBAR: Sidebar = {
-  '初期設定': [{ text: 'ブラウザ設定', link: 'doc/page-0' }],
-  '製品サポート': [
-    { text: '用語の定義', link: 'doc/page-1' },
-    { text: '機能一覧', link: 'doc/page-2' },
-    { text: '基本操作（共通）', link: 'doc/page-3' },
-    { text: '基本操作（マスタメンテ）', link: 'doc/page-4-master'},
-    { text: '基本操作（入力画面）', link: 'doc/page-5-input' },
-    { text: '受注入力', link: 'doc/page-0030' },
-    { text: '商品マスタ', link: 'doc/page-1060' },
-  ],
-
-}
+export const SIDEBAR: Sidebar = {}
